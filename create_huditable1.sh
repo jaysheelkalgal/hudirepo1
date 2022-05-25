@@ -19,7 +19,7 @@ import org.apache.hudi.DataSourceReadOptions
 import org.apache.hudi.QuickstartUtils._
 import org.apache.spark.sql.DataFrame
 
-scala> sc_sql=spark.sql("""CREATE  TABLE product_dtl(
+scala> val sc_sql=spark.sql("""CREATE  TABLE product_dtl(
      |    `_hoodie_commit_time` STRING
      |   ,`_hoodie_commit_seqno` STRING
      |   ,`_hoodie_record_key` STRING
